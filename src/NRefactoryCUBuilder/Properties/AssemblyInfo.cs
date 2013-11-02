@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("NRefactoryCUBuilder")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Creates NRefactory Compilation Units from .net solutions. Each csharp project, incuding its files, external assemblies and referenced projects are resolved and included on the compilation units")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Roberto Pepato")]
 [assembly: AssemblyProduct("NRefactoryCUBuilder")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright ©  2013 Roberto Pepato")]
+[assembly: AssemblyTrademark("Roberto Pepato")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
