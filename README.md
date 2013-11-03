@@ -35,6 +35,13 @@ catch (ParseError parseEx)
 
 ```
 
+## Dependencies
+
+NRCUB depends on the following libraries (already included on nuget configuration):
+
+* [StructEx](https://github.com/rpepato/StructEx)
+* [NRefactory](https://github.com/icsharpcode/NRefactory)
+
 ## Limitations
 
 The current version only works with C# projects (including class libraries, console, windows forms, asp.net mvc, and other project types)
