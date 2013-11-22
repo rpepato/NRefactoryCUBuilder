@@ -44,6 +44,6 @@ namespace NRefactoryCUBuilder
 
         public CSharpUnresolvedFile UnresolvedTypeSystemForFile { get; private set; }
 
-        private SyntaxTree SyntaxTree { get; set; }
+        public SyntaxTree SyntaxTree { get; private set; }
     }
 }
