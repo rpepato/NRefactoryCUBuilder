@@ -77,10 +77,15 @@ namespace NRefactoryCUBuilder.Tests
         }
 
         [Test]
-        [ExpectedException(typeof(ParseException))]
         public void ShouldThrowExceptionWhenParsingASolutionWithABrokenSyntaxTree()
         {
-            var solution = CreateSolutionFor("BrokenSyntaxTree", "BrokenSyntaxTree.sln");
+            (new Action(() => CreateSolutionFor("BrokenSyntaxTree", "BrokenSyntaxTree.sln"))).Should().Throw<ParseException>();
+        }
+
+        [Test]
+        public void ShouldThrowExceptionWhenSolutionFileIsMissing()
+        {
+            (new Action(() => new Solution("C:\\wrongpath.sln"))).Should().Throw<FileNotFoundException>();
         }
 
         private Solution CreateSolutionFor(string solutionFolderName, string solutionFileName)
